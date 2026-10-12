@@ -1,0 +1,23 @@
+
+
+
+# Ambiente virtual Python
+.venv/
+venv/
+env/
+
+# Arquivos gerados pelo Python
+__pycache__/
+*.py[cod]
+
+# Configurações locais e segredos
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Arquivos temporários e de editor
+*.swp
+*.tmp
+.DS_Store
