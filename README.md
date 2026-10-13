@@ -26,7 +26,7 @@ Como as configurações do ambiente podem variar entre usuários, esta seção a
 
 -----
 
-1 - Crie uma pasta e arquivos
+# 1 - Crie uma pasta e arquivos
 
 Dentro do terminal do Kali Linux, deve ser criar e entrar em uma pasta, então use:
 
