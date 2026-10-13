@@ -2,7 +2,7 @@
 
 ## Sobre o projeto
 
-Esse projeto se trata sobre um desafio da DIO, do qual, devo usar o Kali Linux para a criação de arquivos simples responsáveis para criptografar e descriptografar um arquivo txt, buscando ter uma melhor compreensão de como funciona e de como usar o Ransomware
+Esse projeto se trata sobre um desafio da DIO, do qual, devo usar o Kali Linux para a criação de scripts em Python para criptografar e descriptografar um arquivo de texto, buscando ter uma melhor compreensão de como funciona e de como usar o Ransomware em um ambiente controlado
 
 
 ## Tecnologias
@@ -14,17 +14,43 @@ Esse projeto se trata sobre um desafio da DIO, do qual, devo usar o Kali Linux p
 
 ## Arquivos principais
 
-- `encrypter.py`: responsável por armazenar o código para critografia
-- `decrypter.py`: responsável por armazenar o código para descriptografia
-- `teste.txt`: arquivo responsável por armazenar o texto
+- `encrypter.py`: armazena o código para critografia
+- `decrypter.py`: armazena o código para descriptografia
+- `teste.txt`: arquivo responsável por armazenar o texto e testar scripts
 
 ## Como executar
 
-Antes de mais qualquer coisa, é importante salientar que esse projeto foi desenvolvido usando Kali Linux em uma VM(Virtual Box), e como nem todas a VMs são configuradas da mesma forma por cada usuário, deixarei alguns comandos extras para cada a aplicação em Python não funcione, pois dependendo a configuração do Kali Linux, talvez ele não baixe todos os pacotes necessários.
+Este projeto foi desenvolvido no Kali Linux, executado em uma máquina virtual (VM) por meio do Oracle VirtualBox.
 
+Como as configurações do ambiente podem variar entre usuários, esta seção apresentará os requisitos e os comandos necessários para preparar o ambiente Python e executar os scripts, incluindo possíveis soluções para problemas de dependências.
+
+-----
+
+1 - Crie uma pasta e arquivos
+
+Dentro do terminal do Kali Linux, deve ser criar e entrar em uma pasta, então use:
+
+```
+mkdir projeto-ransomware
+cd projeto-ransomware
+```
+Após criar e entrar na pasta digite os seguintes comandos:
+
+```
+nano encrypter.py
+nano decrypter.py
+nano teste.txt
+```
+A estrutura final deve ficar assim:
+
+```
+projeto-ransomware/
+├── encrypter.py
+├── decrypter.py
+├── teste.txt
+└── README.md
+```
 ## Aprendizados
-
-[Explique os conceitos técnicos que você praticou durante o desenvolvimento.]
 
 ## Aviso de segurança
 
