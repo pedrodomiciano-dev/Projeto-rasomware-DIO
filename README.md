@@ -11,8 +11,8 @@
 
 ## Arquivos principais
 
- `encrypter.py`: responsável por [...]
- `decrypter.py`: responsável por [...]
+ -`encrypter.py`: responsável por [...]
+ -`decrypter.py`: responsável por [...]
 
 ## Como executar
 
