@@ -26,7 +26,7 @@ Como as configurações do ambiente podem variar entre usuários, esta seção a
 
 -----
 
-# 1 - Crie uma pasta e arquivos
+## 1 - Crie uma pasta e arquivos
 
 Dentro do terminal do Kali Linux, deve ser criar e entrar em uma pasta, então use:
 
@@ -50,6 +50,26 @@ projeto-ransomware/
 ├── teste.txt
 └── README.md
 ```
+Com isso, copie e cole os scripts desse repositório em seus respectivos arquivos criados, acessando via `nano` no terminal, colando os scripts salvar com `Ctrl + O`, depois `Enter` e por `Ctrl + X`
+
+## 2 - Criar ambiente python
+
+Caso você tente executar por exemplo `python encrypter.py` e aparecer uma mensagem de erro, isso pode significar que o Kali não baixou todos os pacotes necessários, nesse caso digite os seguintes comandos dentro da pasta:
+```
+python3 -m venv .venv
+source .venv/bin/activate
+```
+Após isso, instale a bilbioteca:
+```
+python -m pip install pyaes
+```
+Se o comando venv não estiver disponível, instale o pacote correspondente no Kali:
+```
+sudo apt update
+sudo apt install python3-venv
+```
+
+
 ## Aprendizados
 
 ## Aviso de segurança
