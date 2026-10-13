@@ -68,6 +68,13 @@ Se o comando venv não estiver disponível, instale o pacote correspondente no K
 sudo apt update
 sudo apt install python3-venv
 ```
+E para conferir a estrutura:
+```
+ls -la
+```
+
+
+
 
 
 ## Aprendizados
