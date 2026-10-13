@@ -4,7 +4,9 @@
 
 [Explique com suas próprias palavras o objetivo do projeto e o que você desenvolveu.]
 
-## Tecnologias utilizadas
+
+
+## Tecnologias
 
 - Python
 - pyaes
