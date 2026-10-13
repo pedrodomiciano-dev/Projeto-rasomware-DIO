@@ -2,8 +2,7 @@
 
 ## Sobre o projeto
 
-Esse projeto se trata sobre um desafio da DIO, do qual, devo usar o Kali Linux para a criação de scripts em Python para criptografar e descriptografar um arquivo de texto, buscando ter uma melhor compreensão de como funciona e de como usar o Ransomware em um ambiente controlado
-
+Este projeto foi desenvolvido como parte de um desafio da DIO. O objetivo é utilizar o Kali Linux para criar scripts em Python capazes de criptografar e descriptografar um arquivo de texto, buscando compreender melhor o funcionamento da criptografia de arquivos e sua relação com ataques do tipo ransomware em um ambiente controlado.
 
 ## Tecnologias
 
@@ -14,71 +13,91 @@ Esse projeto se trata sobre um desafio da DIO, do qual, devo usar o Kali Linux p
 
 ## Arquivos principais
 
-- `encrypter.py`: armazena o código para critografia
-- `decrypter.py`: armazena o código para descriptografia
-- `teste.txt`: arquivo responsável por armazenar o texto e testar scripts
+- `encrypter.py`: contém o código responsável pela criptografia do arquivo.
+- `decrypter.py`: contém o código responsável pela descriptografia do arquivo.
+- `teste.txt`: arquivo de texto utilizado para testar o funcionamento dos scripts.
 
 ## Como executar
 
 Este projeto foi desenvolvido no Kali Linux, executado em uma máquina virtual (VM) por meio do Oracle VirtualBox.
 
-Como as configurações do ambiente podem variar entre usuários, esta seção apresentará os requisitos e os comandos necessários para preparar o ambiente Python e executar os scripts, incluindo possíveis soluções para problemas de dependências.
+Como as configurações do ambiente podem variar entre usuários, esta seção apresenta os requisitos e os comandos necessários para preparar o ambiente Python e executar os scripts, incluindo possíveis soluções para problemas relacionados às dependências.
 
------
+### 1. Criação da pasta e dos arquivos
 
-## 1 - Crie uma pasta e arquivos
+No terminal do Kali Linux, crie uma pasta para o projeto e acesse-a utilizando os seguintes comandos:
 
-Dentro do terminal do Kali Linux, deve ser criar e entrar em uma pasta, então use:
-
-```
+```bash
 mkdir projeto-ransomware
 cd projeto-ransomware
 ```
-Após criar e entrar na pasta digite os seguintes comandos:
 
-```
+Em seguida, crie e abra os arquivos utilizando o editor de texto `nano`:
+
+```bash
 nano encrypter.py
 nano decrypter.py
 nano teste.txt
 ```
-A estrutura final deve ficar assim:
 
-```
+Copie os scripts deste repositório e cole cada um no arquivo correspondente. Para salvar o conteúdo no `nano`, pressione `Ctrl + O`, confirme com `Enter` e, em seguida, pressione `Ctrl + X` para sair do editor.
+
+A estrutura final do projeto deverá ser semelhante a esta:
+
+```text
 projeto-ransomware/
 ├── encrypter.py
 ├── decrypter.py
 ├── teste.txt
 └── README.md
 ```
-Com isso, copie e cole os scripts desse repositório em seus respectivos arquivos criados, acessando via `nano` no terminal, colando os scripts salvar com `Ctrl + O`, depois `Enter` e por `Ctrl + X`
 
-## 2 - Criar ambiente python
+O arquivo `README.md` contém a documentação do projeto. Ele também deverá estar presente na pasta do projeto.
 
-Caso você tente executar por exemplo `python encrypter.py` e aparecer uma mensagem de erro, isso pode significar que o Kali não baixou todos os pacotes necessários, nesse caso digite os seguintes comandos dentro da pasta:
+### 2. Preparação do ambiente Python
+
+Antes de executar os scripts, verifique se o Python 3 está instalado:
+
+```bash
+python3 --version
 ```
+
+Para criar um ambiente virtual e ativá-lo, execute os seguintes comandos dentro da pasta do projeto:
+
+```bash
 python3 -m venv .venv
 source .venv/bin/activate
 ```
-Após isso, instale a bilbioteca:
-```
+
+O ambiente virtual permite isolar as dependências Python utilizadas pelo projeto.
+
+Em seguida, instale a biblioteca `pyaes`:
+
+```bash
 python -m pip install pyaes
 ```
-Se o comando venv não estiver disponível, instale o pacote correspondente no Kali:
-```
+
+Caso ocorra um erro informando que o módulo `venv` não está disponível, instale o pacote correspondente no Kali Linux:
+
+```bash
 sudo apt update
 sudo apt install python3-venv
 ```
-E para conferir a estrutura:
-```
+
+Após a instalação, tente criar e ativar o ambiente virtual novamente.
+
+Para conferir os arquivos presentes no diretório, incluindo os arquivos e pastas ocultos, execute:
+
+```bash
 ls -la
 ```
 
-
-
-
+**Observação:** erros durante a execução dos scripts podem ter diferentes causas, como dependências ausentes, caminhos incorretos ou problemas no código. Portanto, verifique a mensagem de erro antes de determinar a solução.
 
 ## Aprendizados
 
+[Descreva os conceitos técnicos que você aprendeu durante o desenvolvimento do projeto.]
+
 ## Aviso de segurança
 
-Este projeto possui finalidade educacional e foi desenvolvido em um ambiente de testes controlado, logo, não deve ser utilizado para criptografar arquivos de terceiros ou dados sem autorização.
+Este projeto possui finalidade educacional e foi desenvolvido em um ambiente de testes controlado. Não deve ser utilizado para criptografar arquivos de terceiros ou dados sem autorização.
