@@ -9,10 +9,10 @@
 - Python
 - pyaes
 
-## Arquivos do projeto
+## Arquivos principais
 
-- `encrypter.py`: responsável por [...]
-- `decrypter.py`: responsável por [...]
+ `encrypter.py`: responsável por [...]
+ `decrypter.py`: responsável por [...]
 
 ## Como executar
 
