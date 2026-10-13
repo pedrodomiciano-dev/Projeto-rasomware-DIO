@@ -1,139 +1,27 @@
-# Laboratório de Criptografia de Arquivos com Python
+# Laboratório de Criptografia em Python
 
 ## Sobre o projeto
 
-Este projeto é um laboratório educacional de cibersegurança desenvolvido em Python para demonstrar o funcionamento da criptografia e descriptografia de arquivos utilizando o algoritmo AES no modo CTR.
-
-O experimento utiliza a biblioteca `pyaes` e um arquivo de texto descartável para observar como o conteúdo original é transformado em dados criptografados e posteriormente recuperado.
-
-## Objetivos
-
-- Compreender o funcionamento básico da criptografia simétrica.
-- Utilizar Python para manipular arquivos em modo binário.
-- Aplicar o algoritmo AES no modo CTR.
-- Observar as alterações nos arquivos durante a criptografia e a descriptografia.
-- Praticar o uso do Kali Linux e a documentação de experimentos técnicos.
+[Explique com suas próprias palavras o objetivo do projeto e o que você desenvolveu.]
 
 ## Tecnologias utilizadas
 
-- Python 3
-- Kali Linux
-- Biblioteca `pyaes`
-- AES-128 no modo CTR
-- Git e GitHub
+- Python
+- pyaes
 
-## Estrutura do projeto
+## Arquivos do projeto
 
-```
-projeto-aes/
-├── encrypter.py
-├── decrypter.py
-├── teste.txt
-├── README.md
-└── evidencias/
-```
-
-## Funcionamento
-
-### 1. Criptografia
-
-O script `encrypter.py`:
-
-1. Abre `teste.txt` em modo binário.
-2. Lê o conteúdo do arquivo.
-3. Remove o arquivo original.
-4. Criptografa os dados utilizando AES-CTR.
-5. Grava o resultado em `teste.txt.ransomwaretroll`.
-
-### 2. Descriptografia
-
-O script `decrypter.py`:
-
-1. Abre o arquivo criptografado.
-2. Lê os dados em modo binário.
-3. Utiliza a mesma chave para recuperar o conteúdo.
-4. Remove o arquivo criptografado.
-5. Cria novamente `teste.txt` com os dados recuperados.
+- `encrypter.py`: responsável por [...]
+- `decrypter.py`: responsável por [...]
 
 ## Como executar
 
-### Pré-requisitos
-
-- Python 3 instalado.
-- Biblioteca `pyaes`.
-- Terminal Linux.
-
-### Preparação do ambiente
-
-Crie e ative um ambiente virtual:
-
-```
-python3 -m venv .venv
-source .venv/bin/activate
-```
-
-Instale a dependência:
-
-```
-python -m pip install pyaes
-```
-
-### Executando o experimento
-
-Com um arquivo descartável `teste.txt` contendo texto de exemplo, execute:
-
-```
-python encrypter.py
-```
-
-Confira o arquivo produzido:
-
-```
-ls -l teste.txt*
-```
-
-Para observar os bytes criptografados:
-
-```
-xxd teste.txt.ransomwaretroll
-```
-
-Para recuperar o conteúdo original:
-
-```
-python decrypter.py
-```
-
-Confira o resultado:
-
-```
-cat teste.txt
-```
-
-
-
-
-## Resultado
-
-Durante o teste, o conteúdo legível do arquivo foi transformado em dados não legíveis diretamente após a execução do criptografador.
-
-O arquivo criptografado recebeu a extensão `.ransomwaretroll`. Após executar o descriptografador, o arquivo original foi recriado e o texto pôde ser lido novamente.
-
-As capturas de tela dos testes estão disponíveis na pasta `evidencias/`.
-
-## Considerações de segurança
-
-Este projeto é exclusivamente educacional.
-
-A chave está definida diretamente no código, e o modo CTR não oferece autenticação ou garantia de integridade dos dados por si só. O exemplo não deve ser considerado uma implementação segura para proteger arquivos reais.
-
-Os scripts removem arquivos durante a execução. Por isso, os testes devem ser realizados somente com arquivos descartáveis e cópias de segurança.
+[Descreva os requisitos e os passos necessários para executar o projeto.]
 
 ## Aprendizados
 
-- Manipulação de arquivos com Python.
-- Leitura e gravação em modo binário.
-- Uso de bibliotecas criptográficas.
-- Diferença entre dados legíveis e dados criptografados.
-- Organização e documentação de um projeto técnico.
-- Registro de evidências de um experimento de laboratório.
+[Explique os conceitos técnicos que você praticou durante o desenvolvimento.]
+
+## Aviso de segurança
+
+Este projeto possui finalidade educacional e foi desenvolvido em um ambiente de testes controlado. Não deve ser utilizado para criptografar arquivos de terceiros ou dados sem autorização.
