@@ -1,58 +1,136 @@
+# Laboratório de Criptografia de Arquivos com Python
 
-# Projeto DIO: Criptografia AES
+## Sobre o projeto
 
-## Descrição
+Este projeto é um laboratório educacional de cibersegurança desenvolvido em Python para demonstrar o funcionamento da criptografia e descriptografia de arquivos utilizando o algoritmo AES no modo CTR.
 
-Projeto desenvolvido em Python para estudar a criptografia e a descriptografia de arquivos utilizando a biblioteca `pyaes` e o algoritmo AES no modo CTR.
+O experimento utiliza a biblioteca `pyaes` e um arquivo de texto descartável para observar como o conteúdo original é transformado em dados criptografados e posteriormente recuperado.
 
-O objetivo é compreender a manipulação de arquivos binários, o uso de bibliotecas externas e o funcionamento básico de um processo de criptografia e recuperação de dados.
+## Objetivos
 
-## Tecnologias
+- Compreender o funcionamento básico da criptografia simétrica.
+- Utilizar Python para manipular arquivos em modo binário.
+- Aplicar o algoritmo AES no modo CTR.
+- Observar as alterações nos arquivos durante a criptografia e a descriptografia.
+- Praticar o uso do Kali Linux e a documentação de experimentos técnicos.
+
+## Tecnologias utilizadas
 
 - Python 3
-- Biblioteca `pyaes`
 - Kali Linux
+- Biblioteca `pyaes`
+- AES-128 no modo CTR
 - Git e GitHub
 
-## Arquivos
+## Estrutura do projeto
 
-- `encrypter.py`: criptografa o arquivo de teste.
-- `decrypter.py`: descriptografa o arquivo e restaura seu conteúdo.
-- `teste.txt`: arquivo utilizado durante os testes.
-- `.gitignore`: define arquivos que devem ser ignorados pelo Git.
+```text
+projeto-aes/
+├── encrypter.py
+├── decrypter.py
+├── teste.txt
+├── README.md
+└── evidencias/
+```
 
-## Execução
+## Funcionamento
 
-Instale a dependência `pyaes` no ambiente Python utilizado:
+### 1. Criptografia
+
+O script `encrypter.py`:
+
+1. Abre `teste.txt` em modo binário.
+2. Lê o conteúdo do arquivo.
+3. Remove o arquivo original.
+4. Criptografa os dados utilizando AES-CTR.
+5. Grava o resultado em `teste.txt.ransomwaretroll`.
+
+### 2. Descriptografia
+
+O script `decrypter.py`:
+
+1. Abre o arquivo criptografado.
+2. Lê os dados em modo binário.
+3. Utiliza a mesma chave para recuperar o conteúdo.
+4. Remove o arquivo criptografado.
+5. Cria novamente `teste.txt` com os dados recuperados.
+
+## Como executar
+
+### Pré-requisitos
+
+- Python 3 instalado.
+- Biblioteca `pyaes`.
+- Terminal Linux.
+
+### Preparação do ambiente
+
+Crie e ative um ambiente virtual:
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+Instale a dependência:
 
 ```bash
 python -m pip install pyaes
 ```
 
-Execute primeiro o script de criptografia:
+### Executando o experimento
+
+Com um arquivo descartável `teste.txt` contendo texto de exemplo, execute:
 
 ```bash
 python encrypter.py
 ```
 
-Depois, execute o script de descriptografia:
+Confira o arquivo produzido:
+
+```bash
+ls -l teste.txt*
+```
+
+Para observar os bytes criptografados:
+
+```bash
+xxd teste.txt.ransomwaretroll
+```
+
+Para recuperar o conteúdo original:
 
 ```bash
 python decrypter.py
 ```
 
-## Conceitos estudados
+Confira o resultado:
 
-- Leitura e escrita de arquivos em modo binário.
+```bash
+cat teste.txt
+```
+
+## Resultados observados
+
+Durante o teste, o conteúdo legível do arquivo foi transformado em dados não legíveis diretamente após a execução do criptografador.
+
+O arquivo criptografado recebeu a extensão `.ransomwaretroll`. Após executar o descriptografador, o arquivo original foi recriado e o texto pôde ser lido novamente.
+
+As capturas de tela dos testes estão disponíveis na pasta `evidencias/`.
+
+## Considerações de segurança
+
+Este projeto é exclusivamente educacional.
+
+A chave está definida diretamente no código, e o modo CTR não oferece autenticação ou garantia de integridade dos dados por si só. O exemplo não deve ser considerado uma implementação segura para proteger arquivos reais.
+
+Os scripts removem arquivos durante a execução. Por isso, os testes devem ser realizados somente com arquivos descartáveis e cópias de segurança.
+
+## Aprendizados
+
 - Manipulação de arquivos com Python.
-- Uso de bibliotecas externas.
-- Criptografia e descriptografia AES-CTR.
-- Controle de versão com Git.
-
-## Observações de segurança
-
-Este projeto é exclusivamente educacional. Os scripts removem arquivos durante o processo e não implementam mecanismos robustos de recuperação em caso de falha.
-
-A chave é fixa e está definida diretamente no código. O modo CTR não fornece autenticação ou integridade dos dados por si só.
-
-Utilize somente arquivos descartáveis em um ambiente controlado. Não utilize este projeto para proteger dados reais ou em sistemas de terceiros.
+- Leitura e gravação em modo binário.
+- Uso de bibliotecas criptográficas.
+- Diferença entre dados legíveis e dados criptografados.
+- Organização e documentação de um projeto técnico.
+- Registro de evidências de um experimento de laboratório.
