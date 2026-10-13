@@ -24,7 +24,7 @@ O experimento utiliza a biblioteca `pyaes` e um arquivo de texto descartável pa
 
 ## Estrutura do projeto
 
-```text
+```
 projeto-aes/
 ├── encrypter.py
 ├── decrypter.py
@@ -67,14 +67,14 @@ O script `decrypter.py`:
 
 Crie e ative um ambiente virtual:
 
-```bash
+```
 python3 -m venv .venv
 source .venv/bin/activate
 ```
 
 Instale a dependência:
 
-```bash
+```
 python -m pip install pyaes
 ```
 
