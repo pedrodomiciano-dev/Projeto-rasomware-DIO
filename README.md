@@ -82,38 +82,38 @@ python -m pip install pyaes
 
 Com um arquivo descartável `teste.txt` contendo texto de exemplo, execute:
 
-```bash
+```
 python encrypter.py
 ```
 
 Confira o arquivo produzido:
 
-```bash
+```
 ls -l teste.txt*
 ```
 
 Para observar os bytes criptografados:
 
-```bash
+```
 xxd teste.txt.ransomwaretroll
 ```
 
 Para recuperar o conteúdo original:
 
-```bash
+```
 python decrypter.py
 ```
 
 Confira o resultado:
 
-```bash
+```
 cat teste.txt
 ```
 
 
 
-## Resultados
 
+## Resultado
 
 Durante o teste, o conteúdo legível do arquivo foi transformado em dados não legíveis diretamente após a execução do criptografador.
 
