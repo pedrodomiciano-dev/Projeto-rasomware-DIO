@@ -110,7 +110,10 @@ Confira o resultado:
 cat teste.txt
 ```
 
+
+
 ## Resultados
+
 
 Durante o teste, o conteúdo legível do arquivo foi transformado em dados não legíveis diretamente após a execução do criptografador.
 
