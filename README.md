@@ -95,11 +95,11 @@ ls -la
 **Observação:** erros durante a execução dos scripts podem ter diferentes causas, como dependências ausentes, caminhos incorretos ou problemas no código. Portanto, verifique a mensagem de erro antes de determinar a solução.
 
 
-Acesse a pasta do projeto:
+Ative o ambiente virtual, caso ainda não esteja ativado:
 ```
 source .venv/bin/activate
 ```
-Ative o ambiente virtual, caso ainda não esteja ativado:
+Acesse a pasta do projeto:
 ```
 cd ~/projeto-ransomware
 ```
