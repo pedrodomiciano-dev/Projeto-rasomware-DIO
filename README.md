@@ -94,20 +94,19 @@ ls -la
 
 **Observação:** erros durante a execução dos scripts podem ter diferentes causas, como dependências ausentes, caminhos incorretos ou problemas no código. Portanto, verifique a mensagem de erro antes de determinar a solução.
 
+
 Acesse a pasta do projeto:
-```
-cd ~/projeto-ransomware
-```
-Ative o ambiente virtual, caso ainda não esteja ativado:
 ```
 source .venv/bin/activate
 ```
-Confira os arquivos existentes:
+Ative o ambiente virtual, caso ainda não esteja ativado:
+```
+cd ~/projeto-ransomware
+```
+Confira os arquivos existentes, seus nomes, e seus respectivos textos usando:
 ```
 ls -la
 ```
-Antes de executar os scripts, confirme que os nomes dos arquivos e os caminhos definidos no código correspondem aos arquivos presentes no diretório.
-
 Execute o script de criptografia:
 ```
 python encrypter.py
@@ -120,7 +119,7 @@ Por fim, confira se o arquivo recuperado contém os mesmos dados do arquivo orig
 
 ## Aprendizados
 
-[Descreva os conceitos técnicos que você aprendeu durante o desenvolvimento do projeto.]
+Durante o curso, consegui me adaptar e me familiarizar com o ambiente de maquinas virtuais e ao Kali Linux, e com esse projeto, consegui aprender coisas interessantes, que incluem a execução de arquivos com scripts em Python via terminal, instalação de bibliotecas python como o pyaes e criptografia de arquivos
 
 ## Aviso de segurança
 
