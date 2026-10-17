@@ -115,7 +115,7 @@ Verifique o resultado e, em seguida, execute o script de descriptografia:
 ```
 python decrypter.py
 ```
-Por fim, confira se o arquivo recuperado contém os mesmos dados do arquivo original.
+Por fim, confira se o arquivo que estava criptografado foi descriptografado, permitindo visualizar o conteúdo dentro dele.
 
 ## Aprendizados
 
