@@ -94,6 +94,8 @@ ls -la
 
 **Observação:** erros durante a execução dos scripts podem ter diferentes causas, como dependências ausentes, caminhos incorretos ou problemas no código. Portanto, verifique a mensagem de erro antes de determinar a solução.
 
+
+
 ## Aprendizados
 
 [Descreva os conceitos técnicos que você aprendeu durante o desenvolvimento do projeto.]
