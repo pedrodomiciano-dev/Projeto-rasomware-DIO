@@ -95,27 +95,27 @@ ls -la
 **Observação:** erros durante a execução dos scripts podem ter diferentes causas, como dependências ausentes, caminhos incorretos ou problemas no código. Portanto, verifique a mensagem de erro antes de determinar a solução.
 
 Acesse a pasta do projeto:
-
+```
 cd ~/projeto-ransomware
-
+```
 Ative o ambiente virtual, caso ainda não esteja ativado:
-
+```
 source .venv/bin/activate
-
+```
 Confira os arquivos existentes:
-
+```
 ls -la
-
+```
 Antes de executar os scripts, confirme que os nomes dos arquivos e os caminhos definidos no código correspondem aos arquivos presentes no diretório.
 
 Execute o script de criptografia:
-
+```
 python encrypter.py
-
+```
 Verifique o resultado e, em seguida, execute o script de descriptografia:
-
+```
 python decrypter.py
-
+```
 Por fim, confira se o arquivo recuperado contém os mesmos dados do arquivo original.
 
 ## Aprendizados
