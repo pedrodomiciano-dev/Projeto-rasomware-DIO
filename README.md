@@ -92,7 +92,7 @@ Para conferir os arquivos presentes no diretório, incluindo os arquivos e pasta
 ls -la
 ```
 
-**Observação:** erros durante a execução dos scripts podem ter diferentes causas, como dependências ausentes, caminhos incorretos ou problemas no código. Portanto, verifique a mensagem de erro antes de determinar a solução.
+**Observação:** erros durante a execução dos scripts podem acontecer, desde de caminhos incorretos ou problemas no código. Portanto, verifique as mensagens com cuidado.
 
 
 Ative o ambiente virtual, caso ainda não esteja ativado:
